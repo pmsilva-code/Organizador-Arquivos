@@ -84,10 +84,25 @@ Downloads/
 - **Alterar a Pasta**: Para organizar outra pasta, edite a variável `download_folder` no início do script.
 - **Adicionar Validações**: Você pode modificar o código para validar extensões específicas ou adicionar regras extras.
 
-## Estrutura do Projeto
+## Como Criar um Executável
 
-- `organizador.py`: Script principal que executa a organização.
-- `README.md`: Este arquivo de documentação.
+Para criar um executável (.exe) que pode ser executado em qualquer computador Windows sem instalar Python:
+
+1. **Instale o PyInstaller** (se não tiver):
+   ```
+   pip install pyinstaller
+   ```
+
+2. **Execute o comando**:
+   ```
+   pyinstaller --onefile organizador.py
+   ```
+
+3. **Localize o executável**:
+   - O arquivo `organizador.exe` será criado na pasta `dist/`.
+   - Copie este arquivo para qualquer computador Windows e execute-o diretamente.
+
+**Nota**: O executável é autossuficiente e inclui tudo necessário para rodar.
 
 ## Contribuição
 
